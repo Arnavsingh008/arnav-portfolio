@@ -35,3 +35,6 @@ coverage/
 # Caches
 .turbo/
 *.tsbuildinfo
+
+# Local documentation (not for GitHub)
+PORTFOLIO_GUIDE.md
