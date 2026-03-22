@@ -10,6 +10,7 @@ export function ContactSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -31,15 +32,45 @@ export function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
+    if (!formspreeEndpoint) {
+      alert('Contact form is not configured. Please set NEXT_PUBLIC_FORMSPREE_ENDPOINT.')
+      return
+    }
+
     setIsSubmitting(true)
     
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    // await new Promise((resolve) => setTimeout(resolve, 1500))
     
-    setIsSubmitting(false)
-    setSubmitted(true)
+    // setIsSubmitting(false)
+    // setSubmitted(true)
     
-    setTimeout(() => setSubmitted(false), 3000)
+    // setTimeout(() => setSubmitted(false), 3000)
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    
+    try {
+      const response = await fetch(formspreeEndpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      
+      if (response.ok) {
+        setSubmitted(true)
+        form.reset()
+        setTimeout(() => setSubmitted(false), 3000)
+      } else {
+        alert('Failed to send message. Please try again.')
+      }
+    } catch {
+      alert('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    } 
   }
 
   return (
@@ -157,6 +188,7 @@ export function ContactSection() {
                 </label>
                 <Input
                   id="name"
+                  name="name"
                   placeholder="Abc Singh"
                   required
                   className="bg-secondary/50 border-border focus:border-primary"
@@ -169,6 +201,7 @@ export function ContactSection() {
                 </label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="abc@gmail.com"
                   required
@@ -182,6 +215,7 @@ export function ContactSection() {
                 </label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Tell me about your project..."
                   rows={5}
                   required
