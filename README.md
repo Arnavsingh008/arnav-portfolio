@@ -40,8 +40,8 @@ A modern, premium portfolio website built with Next.js 15, React 19, and Tailwin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
+   git clone https://github.com/Arnavsingh008/arnav-portfolio.git 
+   cd arnav-portfolio
    ```
 
 2. Install dependencies:
