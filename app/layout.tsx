@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   keywords: ['Arnav Singh', 'Full Stack Developer', 'MERN Developer', 'React', 'Node.js', 'MongoDB', 'Web Developer', 'Portfolio'],
   authors: [{ name: 'Arnav Singh' }],
   creator: 'Arnav Singh',
+  icons: {
+    icon: '/favicon.jpg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
