@@ -18,7 +18,7 @@ const educationData: Education[] = [
     institution: 'Lovely Professional University',
     location: 'Punjab, India',
     period: 'Aug 2023 - Present',
-    grade: 'CGPA: 7.49',
+    grade: 'CGPA: 7.56',
     icon: GraduationCap,
   },
   {
