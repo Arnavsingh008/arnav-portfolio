@@ -21,7 +21,7 @@ interface Certificate {
 const achievements: Achievement[] = [
   {
     icon: Code2,
-    value: 150,
+    value: 180,
     suffix: '+',
     label: 'DSA Problems Solved',
     color: 'text-cyan-400',

@@ -66,8 +66,7 @@ export function HeroSection() {
             </div>
 
             <p className="reveal text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed" style={{ transitionDelay: '0.3s' }}>
-              Passionate about building modern web applications with cutting-edge technologies.
-              I transform ideas into elegant, functional digital experiences.
+              Building scalable MERN applications and solving real-world problems through clean, efficient code.
             </p>
 
             {/* CTA Buttons */}
@@ -137,7 +136,8 @@ export function HeroSection() {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glass p-2 ">
                 <div className="w-full h-full rounded-full overflow-hidden relative">
                   <Image
-                    src="/images/profile.jpeg"
+                    // src="/images/profile.jpeg"
+                    src="/images/ASR.jpg"
                     alt="Arnav Singh"
                     fill
                     className="object-cover"

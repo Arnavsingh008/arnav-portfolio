@@ -70,27 +70,29 @@ export function AboutSection() {
           {/* Left - Text */}
           <div className="reveal" style={{ transitionDelay: '0.2s' }}>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I&apos;m a <span className="text-primary font-semibold">Full Stack MERN Developer</span> with a passion for 
-              building innovative web applications. Currently pursuing my B.Tech in Computer Science at 
-              Lovely Professional University, I specialize in creating end-to-end solutions using modern technologies.
+              I&apos;m a <span className="text-primary font-semibold">Full Stack MERN Developer</span> pursuing B.Tech in Computer Science at
+              Lovely Professional University. I enjoy building scalable and user-friendly web applications that solve practical problems using
+              React.js, Node.js, Express.js, and MongoDB.
             </p>
+
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With hands-on experience in building full-stack applications, dashboards, and real-time systems, 
-              I bring ideas to life through clean, efficient code. From crafting intuitive user interfaces with 
-              React to designing robust backend architectures with Node.js and MongoDB, I handle every aspect 
-              of development.
+              My experience includes developing full-stack applications, REST APIs, authentication systems, dashboards,
+              and real-time features. I have worked with technologies like JWT, Socket.io, Docker, GitHub Actions,
+              MySQL, and MongoDB while focusing on clean code, responsive UI, and efficient backend architecture.
             </p>
+
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Beyond coding, I&apos;m an active problem solver with <span className="text-primary font-semibold">150+ DSA problems</span> solved 
-              across various platforms. I believe in continuous learning and staying updated with the latest 
-              industry trends and technologies.
+              I regularly improve my problem-solving skills through Data Structures and Algorithms, with
+              <span className="text-primary font-semibold"> 180+ DSA problems solved</span>.
+              I am passionate about learning new technologies and continuously enhancing my skills in Java,
+              backend development, cloud technologies, and software engineering best practices.
             </p>
           </div>
 
           {/* Right - Stats */}
           <div className="reveal grid grid-cols-2 gap-4" style={{ transitionDelay: '0.3s' }}>
             <div className="glass p-6 rounded-xl text-center hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold gradient-text mb-2">150+</div>
+              <div className="text-4xl font-bold gradient-text mb-2">180+</div>
               <div className="text-sm text-muted-foreground">DSA Problems</div>
             </div>
             <div className="glass p-6 rounded-xl text-center hover:scale-105 transition-transform">
