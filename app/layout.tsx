@@ -56,6 +56,10 @@ export const metadata: Metadata = {
   creator: "Arnav Singh",
   publisher: "Arnav Singh",
 
+  verification: {
+  google: "gw5eMrxxDFzSWbjNBUAhsuZv69yUI0jsOYrb1j1XsIQ",
+},
+
   alternates: {
     canonical: "https://arnavsingh.dev",
   },
