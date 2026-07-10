@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arnav Singh | Full Stack MERN Developer",
     description:
-      "Explore the portfolio of Arnav Singh, showcasing MERN Stack projects, Java development, Docker, DevOps, and modern web applications.",
+  "Portfolio of Arnav Singh – Full Stack MERN Developer building scalable web applications with React, Next.js, Node.js, Express.js, MongoDB, Docker, and strong problem-solving skills in Java.",
 
     url: "https://arnavsingh.dev",
     siteName: "Arnav Singh Portfolio",
