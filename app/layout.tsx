@@ -22,29 +22,51 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Portfolio of Arnav Singh, a Full Stack MERN Developer skilled in React.js, Next.js, Node.js, Express.js, MongoDB, Java, Docker, GitHub Actions, and modern web development.",
+  "Portfolio of Arnav Singh, a Full Stack MERN Developer specializing in React.js, Next.js, Node.js, Express.js, MongoDB, Java, Docker, DevOps, CI/CD, AWS, and modern web development. Explore projects, technical skills, certifications, and problem-solving experience.",
 
   keywords: [
-    "Arnav Singh",
-    "Arnav Singh Portfolio",
-    "Full Stack Developer",
-    "MERN Developer",
-    "React Developer",
-    "Next.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Java",
-    "Java Developer",
-    "Docker",
-    "GitHub Actions",
-    "Web Developer",
-    "Software Engineer",
-    "Portfolio",
-    "Arnav Singh LPU",
-    "Arnav Singh Hazaribagh",
-    "Arnav Singh MERN Developer",
-  ],
+  "Arnav Singh",
+  "Arnav Singh Portfolio",
+  "Arnav Singh Developer",
+  "Arnav Singh Full Stack Developer",
+  "Arnav Singh MERN Developer",
+  "Full Stack Developer",
+  "Full Stack MERN Developer",
+  "MERN Stack Developer",
+  "React.js",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Java",
+  "Java Developer",
+  "Docker",
+  "DevOps",
+  "CI/CD",
+  "GitHub Actions",
+  "AWS",
+  "Linux",
+  "REST API",
+  "Tailwind CSS",
+  "Git",
+  "GitHub",
+  "Software Engineer",
+  "Frontend Developer",
+  "Backend Developer",
+  "Web Developer",
+  "Portfolio",
+  "Data Structures",
+  "Algorithms",
+  "DSA",
+  "LeetCode",
+  "HackerRank",
+  "Lovely Professional University",
+  "LPU",
+  "Punjab",
+  "Hazaribagh",
+  "Jharkhand",
+  "India",
+],
 
   authors: [
     {
@@ -55,6 +77,7 @@ export const metadata: Metadata = {
 
   creator: "Arnav Singh",
   publisher: "Arnav Singh",
+  applicationName: "Arnav Singh",
 
   verification: {
   google: "gw5eMrxxDFzSWbjNBUAhsuZv69yUI0jsOYrb1j1XsIQ",
@@ -102,10 +125,10 @@ manifest: "/site.webmanifest",
   openGraph: {
     title: "Arnav Singh | Full Stack MERN Developer",
     description:
-  "Portfolio of Arnav Singh – Full Stack MERN Developer building scalable web applications with React, Next.js, Node.js, Express.js, MongoDB, Docker, and strong problem-solving skills in Java.",
+  "Portfolio of Arnav Singh – Full Stack MERN Developer building scalable web applications using React.js, Next.js, Node.js, Express.js, MongoDB, Java, Docker, DevOps, CI/CD, and AWS.",
 
     url: "https://arnavsingh.dev",
-    siteName: "Arnav Singh Portfolio",
+    siteName: "Arnav Singh",
     locale: "en_US",
     type: "website",
 
@@ -123,7 +146,7 @@ manifest: "/site.webmanifest",
     card: "summary_large_image",
     title: "Arnav Singh | Full Stack MERN Developer",
     description:
-      "Explore my portfolio featuring MERN Stack, Java, Docker, DevOps, and Full Stack projects.",
+  "Explore my portfolio featuring MERN Stack, Java, Docker, DevOps, CI/CD, AWS, Full Stack projects, and DSA problem-solving experience.",
     images: ["/og-image.jpg"],
   },
 };
@@ -156,6 +179,16 @@ const jsonLd = {
     "https://leetcode.com/u/arnavsingh008/",
   ],
 };
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Arnav Singh",
+  alternateName: "Arnav Singh Portfolio",
+  url: "https://arnavsingh.dev",
+  description:
+    "Portfolio of Arnav Singh, Full Stack MERN Developer specializing in React.js, Next.js, Node.js, Express.js, MongoDB, Java, Docker, DevOps, CI/CD and AWS.",
+  inLanguage: "en",
+};
 
 export default function RootLayout({
   children,
@@ -170,7 +203,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
+            __html: JSON.stringify([jsonLd, websiteJsonLd]),
           }}
         />
 
